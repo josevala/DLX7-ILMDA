@@ -1,3 +1,24 @@
+<template>
+  <div class="carousel">
+
+    <section>
+      <div class="image-container">
+        <p class="hover-text">
+          Parking Option 2: Entrance on Holder Street <br />
+          (Google Maps usually recommends this entrance)
+        </p>
+        <img :src="paths[i]" alt="carousel image" />
+      </div>
+    </section>
+
+    <div class="buttons">
+      <button @click="prevImage" :disabled="i === 0">Previous</button>
+      <button @click="nextImage" :disabled="i === paths.length - 1">Next</button>
+    </div>
+
+  </div>
+</template>
+
 <script>
 export default {
   name: "Carousel",
@@ -25,62 +46,78 @@ export default {
 };
 </script>
 
-<template>
-  <div id="mainCont">
-    <div id="contTwo">
-    <p id = "hover">2nd Parking Option: Entrance on Holder Street <br/>(Google maps usually recommends entrance on holder st.)</p>
-    <img :src="paths[i]" alt="carousel image" />
-    </div>
-    <div id="buttons">
-      <button @click="prevImage">Previous</button>
-      <button @click="nextImage">Next</button>
-    </div>
-  </div>
-</template>
-
 <style scoped>
-#mainCont {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.carousel {
   text-align: center;
-  width: 100%;
+  margin-top: 1.5rem;
+}
+
+section {
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  margin: 1rem auto;
+  width: 80%; /* section width */
+  max-width: 800px; /* optional max width */
+  color: white;
+  display: flex;
+  justify-content: center; /* centers content horizontally */
+  background: #222;
+  padding: 1rem;
+}
+
+.image-container {
+  position: relative;
 }
 
 img {
-  width: 45rem;      
-  height: 20rem;      
-  object-fit: contain;  
+  display: block; /* makes margin auto effective */
+  margin: 0 auto; /* centers image */
+  max-width: 100%; /* responsive */
+  height: auto;
+  object-fit: contain;
   border-radius: 8px;
-  margin-bottom: 10px;
-  margin-left: 0%;
-  margin-right: 0%;
+  background: #111;
 }
 
-#buttons{
-   display: flex;
-   flex-direction: row;
-   justify-content: space-between;
-   width: 30%;
+.hover-text {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: rgba(255, 0, 0, 0.8);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  display: none;
+}
+
+.image-container:hover .hover-text {
+  display: block;
+}
+
+.buttons {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center; /* centers buttons */
 }
 
 button {
-  margin: 5px;
-  
+  margin: 0 0.5rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  background: #444;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  transition: background 0.3s ease;
 }
-#contTwo{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+
+button:hover {
+  background: #666;
 }
-#contTwo p{
-  margin: 1px;
-  position: absolute;
-  background-color: Red;
-  display: none;
-}
-#contTwo:hover p {
-  display: block;
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 </style>

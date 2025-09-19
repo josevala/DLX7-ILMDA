@@ -14,6 +14,7 @@
       <section v-for="(sec, index) in sections" :key="index" v-show="currentIndex === index">
         <h2>{{ sec.title }}</h2>
         <div v-html="sec.content"></div>
+        <img src="/images/DLX7_Logo.PNG"/>
       </section>
 
       <div class="buttons">
@@ -56,7 +57,7 @@ export default {
           title: "Day 1 Information",
           content: `
             <ul>
-              <li>>Address: 6450 Katella Ave, Cypress, CA 90630</li>
+              <li>Address: 6450 Katella Ave, Cypress, CA 90630</li>
               <li>Start time is 7:45 AM. Please arrive promptly. Late trainees (after 8:05) will be rescheduled.</li>
               <li>Enter through the pictured doors. Enter room on the left. A Driver Trainer will meet you with your badge and vest. <strong>DOORS LOCKED – WAIT OUTSIDE</strong>.</li>
               <li><strong>Attire:</strong> Active clothing recommended, no jewelry/hoodies. Closed-toed shoes only (no sandals, Crocs, slides).</li>
@@ -135,12 +136,12 @@ button {
 }
 section {
   transition: opacity 0.5s;
-  border: 2px solid #ccc;   /* border around sections */
-  border-radius: 8px;       /* rounded corners */
-  padding: 1rem;            /* spacing inside */
-  margin: 1rem 0;           /* space between sections */
-  background: #222;         /* optional: dark background */
-  color: white;             /* text color for contrast */
+  border: 2px solid #ccc;  
+  border-radius: 8px;       
+  padding: 1rem;          
+  margin: 1rem 0;           
+  background: #222;         
+  color: white;             
 }
 
 section ul {
@@ -151,11 +152,20 @@ section ul {
 section li {
   margin: 0.5rem 0;
 }
+img{
+  width: 25%;
+  height: auto;
+   
+}
 
 @media (max-width: 480px) {
   #container {
     width: 90%;
     padding: 0.75rem;
   }
+  img{
+    width:70%;
+  }
 }
+
 </style>

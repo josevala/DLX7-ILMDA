@@ -1,94 +1,63 @@
 <template>
-  <div id="container">
-    <h1>Instructions</h1>
+  <div id="home-container">
 
-    <p>
-      PLEASE REFERENCE THIS FOR INSTRUCTIONS ON HOW TO ARRIVE ON-SITE.
-      DOT TRAINING STARTS @8:00 AM.
-      DA MUST BRING Uniform, VALID LICENSE AND VALID MEDICAL CERTIFICATE IN ORDER TO TRAIN
-    </p>
+    <div class="header">
+      <img src="/images/DLX7_Logo.PNG" alt="LMDA Logo" class="logo" />
+      <h1 class="title">Last Mile Driver Academy</h1>
+    </div>
 
-    <section>
-      <h2>ORE Driver Training - Orientation Packet</h2>
-      <p>
-        Welcome to DCX8, your delivery station. This packet will outline your training
-        as a Delivery Associate with Amazon. PLEASE READ ENTIRE PACKET BEFORE
-        CONTACTING TRAINERS.
+  
+    <div class="scroll-content">
+      <p><strong>
+        The Last Mile Driver Academy (LMDA) launched on March 28th, 2022 at DDE6 in
+        Denver, CO. DDE6 is a standalone driver training facility which supports five
+        delivery stations' driver training for DSPs in the Denver region. In 2024,
+        DT&amp;P began to launch integrated Last Mile Driver Academy's (iLMDA) to
+        consolidate driver training within one "hub" delivery station.
+          </strong> 
       </p>
+
       <p>
-        If you have further questions or need assistance, please reach out to the
-        Driver Trainer team at:
-        <br />
-        <a href="mailto:dcx8-drivertrainers@amazon">dcx8-drivertrainers@amazon</a>
+        <strong>The program employs a range of training modalities, such as Virtual Reality and
+        Slip-Trip-Fall simulation, to offer a multifaceted approach to driver training.
+        It involves a practical, hands-on training methodology, which includes a
+        real-world on-road driving experience, ensuring a well-rounded training program
+        for delivery associates.
+        </strong>
       </p>
-    </section>
 
-    <section>
-      <h2>Training Schedule</h2>
+      <h2>Core Values</h2>
       <ul>
-        <li><strong>Day 1:</strong> 8:00 AM – 4:30 PM at Delivery Station DCX8</li>
         <li>
-          <strong>Day 2:</strong> 08:00 AM – 04:00 PM / 9:45 AM – 05:30 PM
-        </li>
-        <li><strong>Day 3:</strong> DSP will provide a schedule for day 3.</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Day 1 Information</h2>
-      <ul>
-        <li>Address: 1256 N Magnolia St, Anaheim, CA 92801</li>
-        <li>
-          Start time is 8:00 AM. Please arrive promptly. Late trainees (after 8:10)
-          will be rescheduled.
+          <strong>Safety First:</strong> Display Bias for Action in making AMZL a safer
+          organization for DSPs, DAs, and all Amazonians.
         </li>
         <li>
-          Enter through the pictured doors. Enter room on the left. A Driver Trainer
-          will meet you with your badge and vest. <strong>DOORS LOCKED – WAIT OUTSIDE</strong>.
+          <strong>DA Centric:</strong> Show Customer Obsession in driver training and
+          continuously seek feedback from DAs and DSPs to ensure success.
         </li>
         <li>
-          <strong>Attire:</strong> Active clothing, no jewelry/hoodies. Closed-toed
-          shoes only (no sandals, Crocs, slides).
+          <strong>Experimental Learning:</strong> Merge the art and science of learning
+          into world-class training. Focus on hands-on experience enabled by advanced
+          learning technologies.
         </li>
         <li>
-          <strong>Breaks:</strong> 2×15min breaks + 30min lunch. Bring your own lunch
-          (limited restaurants nearby).
+          <strong>Iterative Process:</strong> Build locally, think globally. Indefinitely
+          reevaluate the programs and facilities to meet changing business needs.
         </li>
         <li>
-          At the end of Day 1, trainer assigns you to 1st or 2nd group for Day 2
-          testing.
+          <strong>Evidence Based:</strong> Incorporate robust training analytics to
+          continuously analyze program data and customer feedback for business
+          performance improvement.
+        </li>
+        <li>
+          <strong>Take Ownership:</strong> Evaluate, train, and empower DTs and DAs to be
+          the safest and most globally effective. Graduate DAs that raise the bar for
+          performance, safety, and quality.
         </li>
       </ul>
-    </section>
-
-    <section>
-      <h2>Day 2 Information</h2>
-      <ul>
-        <li>Start time: 1st group 8:00 AM, 2nd group 9:30 AM</li>
-        <li>
-          Training is outdoors – dress for the weather. Summer = hot (bring hat,
-          sunscreen). Winter = cold/windy (jacket). Training continues even in rain.
-        </li>
-        <li>Bring driver’s license + safety vest.</li>
-        <li>End time: 1st group 4:00 PM, 2nd group 5:30 PM.</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Day 3 Information</h2>
-      <p>Provided by DSP.</p>
-    </section>
-
-    <section>
-      <h2>Final Notes</h2>
-      <p>
-        Thanks for training with us. Even after training, we’re a resource for you.
-        For questions/concerns, email
-        <a href="mailto:dcx8-drivertrainers@amazon">dcx8-drivertrainers@amazon</a>.
-      </p>
-    </section>
+    </div>
   </div>
-
 </template>
 
 <script>
@@ -96,3 +65,73 @@ export default {
   name: "HomeView",
 };
 </script>
+
+<style scoped>
+#home-container {
+  width: 80%;
+  height: 83vh;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  border-radius: 12px;
+  background: #222;         
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+
+.header {
+
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 0.5rem;
+}
+
+.logo {
+  width: 25%;
+  height: auto;
+  padding-right: 15%;  
+}
+
+.title {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.scroll-content {
+  overflow-y: auto;
+  flex: 1; 
+  padding-right: 0.5rem;
+  line-height: 1.6;
+}
+
+.scroll-content h2 {
+  margin-top: 1.5rem;
+  color:white ;
+}
+
+.scroll-content ul {
+  margin-top: 1rem;
+  padding-left: 1.2rem;
+  text-align: left;
+}
+
+.scroll-content li {
+  margin-bottom: 0.8rem;
+}
+li strong{
+  color:yellow;
+}
+@media (max-width: 480px) {
+  .header{
+    justify-content: center;
+    margin: 0%;
+  
+  }
+ .logo{
+  width: 70%;
+  margin: 0%;
+  padding-right: 0%;
+ }
+}
+</style>
