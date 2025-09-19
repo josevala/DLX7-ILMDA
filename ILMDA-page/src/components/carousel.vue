@@ -25,12 +25,12 @@ export default {
   data() {
     return {
       paths: [
-        "/images/map.png",
-        "/images/streetEntrance.png",
-        "/images/parkinkLotPath1.png",
-        "/images/parkingLotPath2.png",
-        "/images/mainEntrance.png",
-        "/images/Lobby.png"
+        "/DLX7-ILMDA/map.png",
+        "/DLX7-ILMDA/streetEntrance.png",
+        "/DLX7-ILMDA/parkinkLotPath1.png",
+        "/DLX7-ILMDA/parkingLotPath2.png",
+        "/DLX7-ILMDA/mainEntrance.png",
+        "/DLX7-ILMDA/Lobby.png"
       ],
       i: 0
     };
