@@ -6,6 +6,7 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/DLX7-ILMDA/', // <-- add this line for GitHub Pages subfolder
   plugins: [
     vue(),
     vueDevTools(),
