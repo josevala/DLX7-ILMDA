@@ -25,12 +25,12 @@ export default {
   data() {
     return {
       paths: [
-        "/DLX7-ILMDA/map.png",
-        "/DLX7-ILMDA/streetEntrance.png",
-        "/DLX7-ILMDA/parkinkLotPath1.png",
-        "/DLX7-ILMDA/parkingLotPath2.png",
-        "/DLX7-ILMDA/mainEntrance.png",
-        "/DLX7-ILMDA/Lobby.png"
+       "images/map.png",
+  "images/streetEntrance.png",
+  "images/parkinkLotPath1.png",
+  "images/parkingLotPath2.png",
+  "images/mainEntrance.png",
+  "images/Lobby.png"
       ],
       i: 0
     };
@@ -56,11 +56,11 @@ section {
   border: 2px solid #ccc;
   border-radius: 8px;
   margin: 1rem auto;
-  width: 80%; /* section width */
-  max-width: 800px; /* optional max width */
+  width: 80%; 
+  max-width: 800px; 
   color: white;
   display: flex;
-  justify-content: center; /* centers content horizontally */
+  justify-content: center; 
   background: #222;
   padding: 1rem;
 }
@@ -70,9 +70,9 @@ section {
 }
 
 img {
-  display: block; /* makes margin auto effective */
-  margin: 0 auto; /* centers image */
-  max-width: 100%; /* responsive */
+  display: block; 
+  margin: 0 auto; 
+  max-width: 100%; 
   height: auto;
   object-fit: contain;
   border-radius: 8px;
@@ -98,7 +98,7 @@ img {
 .buttons {
   margin-top: 1rem;
   display: flex;
-  justify-content: center; /* centers buttons */
+  justify-content: center; 
 }
 
 button {

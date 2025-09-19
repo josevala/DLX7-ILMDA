@@ -2,8 +2,7 @@
   <div id="home-container">
 
     <div class="header">
-     <img src="/images/DLX7_Logo.PNG" alt="LMDA Logo" class="logo" />
-
+     <img src="/DLX7_Logo.PNG" alt="LMDA Logo" class="logo" />
       <h1 class="title">Last Mile Driver Academy</h1>
     </div>
 
@@ -86,7 +85,6 @@ export default {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  margin-bottom: 0.5rem;
 }
 
 .logo {
@@ -112,13 +110,12 @@ export default {
 }
 
 .scroll-content ul {
-  margin-top: 1rem;
   padding-left: 1.2rem;
   text-align: left;
 }
 
 .scroll-content li {
-  margin-bottom: 0.8rem;
+  margin-bottom: 1rem;
 }
 li strong{
   color:yellow;
