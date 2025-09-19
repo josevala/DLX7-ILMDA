@@ -1,6 +1,6 @@
 <script setup >
 import NavBar from "../src/NavBar.vue"
-
+import carousel from "./components/carousel.vue";
 
 </script>
 <template>
@@ -17,6 +17,6 @@ import NavBar from "../src/NavBar.vue"
   position: sticky;
   display: flex;
   width: 100%;
-
+  height: 100%;
 }
 </style>
