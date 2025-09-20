@@ -2,7 +2,7 @@
   <div id="home-container">
 
     <div class="header">
-     <img src="/DLX7_Logo.PNG" alt="LMDA Logo" class="logo" />
+     <img src="/images/DLX7_Logo.PNG" alt="LMDA Logo" class="logo" />
       <h1 class="title">Last Mile Driver Academy</h1>
     </div>
 

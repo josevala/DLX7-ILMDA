@@ -129,7 +129,7 @@ button {
   cursor: pointer;
 }
 #container a {
-     background-image: url("/DLX7_Logo.PNG");
+     background-image: url("images/DLX7_Logo.PNG");
 
   color: white;
   text-decoration: underline; 

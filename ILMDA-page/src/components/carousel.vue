@@ -26,11 +26,11 @@ export default {
     return {
       paths: [
        "images/map.png",
-  "images/streetEntrance.png",
-  "images/parkinkLotPath1.png",
-  "images/parkingLotPath2.png",
-  "images/mainEntrance.png",
-  "images/Lobby.png"
+       "images/streetEntrance.png",
+      "images/parkinkLotPath1.png",
+      "images/parkingLotPath2.png",
+       "images/mainEntrance.png",
+        "images/Lobby.png"
       ],
       i: 0
     };
